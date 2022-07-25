@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c9d22b43b9.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="resources/img/logoAcolsure.png"  class="logoAcolsureIcono"/>
+    <title>Afiliacion</title>
+    <link rel="stylesheet" href="../resources/style.css">
+</head>
+<body>
+    <main class="grid">
+        <header id="header">
+               <a href="../index.html" >
+                   <h1> Acolsure</h1>
+               </a>
+           <img src="../resources/img/logoAcolsure-PhotoRoom.png" alt="" class="logoAcolsure">
+       </header>
+       <nav>
+           <input type="checkbox" id="check">
+           <label for="check" class="checkbtn">
+               <i class="fas fa-bars"></i>
+           </label>
+
+           <ul class="menu">
+               <li ><a href="../index.html" class="active">Inicio</a> </li> 
+               <li><a href="../pages/historia.html">Historia</a></li>
+               <li><a href="../pages/eventos.html">Eventos</a></li>
+               <li><a href="../pages/beneficios.html">Beneficios</a>
+                   <ul>
+                       <li><a href="../pages/beneficios.html#locate">Ubicación</a></li>
+                       <li><a href="../pages/beneficios.html#ofrecemos">Que ofrecemos</a></li>
+                       <li><a href="../pages/beneficios.html#pasos">Beneficios</a></li>
+                   </ul>                    
+               </li>
+               <li><a href="../pages/afiliacion.html">Afiliarse</a></li>
+           </ul>
+       </nav>
+       <article>
+                   <!-- Icono Flotante ir arriba -->
+            <a href="#header">
+                <i class="irArriba fa-solid fa-arrow-up"></i>
+            </a>
+            <h1 class="titulo">Contáctanos Acolsure Bogotá</h1>
+            
+    <h3 class="subtitulo">Formulario contacto</h3>
+    <section class="subsection">
+        <form action="guardar" method="post" class="formularioForm">
+            <fieldset>
+             <legend> Información afiliación </legend>
+      
+             <br>
+             <label for="nombre">Nombre: </label>
+             <div>
+                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+             </div>
+             <br>
+             <label for="apellido">Apellido: </label>
+             <div>
+                 <input type="apellido" name="apellido" id="apellido" placeholder="Apellido">
+             </div>
+             <br>
+             <label for="grado">Grado: </label>
+             <div>
+                 <select name="grado" id="grado">
+                     <option value="-"></option>
+                     <option value="SM">Sargento Mayor</option>
+                     <option value="VP">Sargento Viciprimero</option>
+                     <option value="S">Sargento</option>
+                     <option value="C">Cabo</option>
+                 </select>
+             </div>
+             <br>
+             <div>Sexo :
+                 <input type="radio" name="sexo" value="H">Hombre
+                 <input type="radio" name="sexo" value="M">Mujer
+             </div>
+             <br>
+             <label for="email">Email: </label>
+             <div>
+                 <input type="email" name="email" id="email" placeholder="Email">
+             </div>
+             <br>
+             <label for="celular">Celular: </label>
+             <div>
+                 <input type="number" name="celular" id="celular" placeholder="celular">
+             </div>
+             <br>
+             <label for="mensaje">Mensaje: </label>
+             <div>
+                 <textarea name="mensaje" id="mensaje" placeholder="mensaje"> </textarea>
+             </div>
+             <br>
+             <div>
+                 <input type="submit" value="Enviar">    
+             </div>
+         </fieldset> 
+         </form>
+    </section>
+
+       </article>
+       <footer>
+           <p>Acolsure Bogotá </p>
+           <section class="mainFooter">
+          
+                <img src="../resources/img/logoAcolsure-PhotoRoom.png" alt="Logo Acolsure" class="logoEmpresa">
+            </section>
+            <p class="redesTitle">Redes sociales</p>
+            <section class="redesFooter">
+               
+                    <ul class="redesFooter__listaRedes">
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=+57 3208346574&text=Hola%20quiero%20saber%20mas%20sobre%20Acolsure%20Bogotá%20link%20https://www.youtube.com/watch?v=9J6IVbkY0Bs"> 
+                                <img src="../resources/img/logoWa.svg" alt="icono whatsapp" class="a__iconosRedes">
+                            </a>whatsapp
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100009639975133"> 
+                                <img src="../resources/img/logoFa.svg" alt="icono facebook" class="a__iconosRedes">
+                            </a>Facebook
+                            
+                        </li>
+                        <li>
+                            <a href="mailto:acolsurebta@yahoo.com?subject=Conocer%20Acolsure&body=Quiero%20conocer%20los%20beneficios%20que%20me%20ofrece%20la%20asociación%20Acolsure%20Bogotá">
+                                <img src="../resources/img/logoEm.svg" alt="icono email" class="a__iconosRedes">
+                            </a>Email
+                        </li>
+                    </ul>
+            </section>
+            <section class="ft-legal">
+                <ul class="ft-legal-list">
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li>&copy; 2022 Copyright Acolsure Bogotá.</li>
+                  <li> <a href="https://www.linkedin.com/in/kenneth-david-leonel-triana-4920b5162/
+                    ">Author : Kenneth Leonel </a></li>
+                </ul>
+              </section>
+       </footer>
+   </main>
+</body>
+</html>
