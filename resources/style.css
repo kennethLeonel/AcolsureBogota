@@ -283,8 +283,9 @@ body{
         color: rgb(255, 244, 244);
         transition: 1s;
         border: 3px solid transparent;
-        border-radius: 10px;
+        border-radius: 11spx;
         border-image: linear-gradient(45deg,#023867,rgb(204, 33, 33)) 1;
+        
       }
 
 
