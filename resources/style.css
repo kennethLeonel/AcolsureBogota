@@ -208,9 +208,21 @@ body{
     .redesFooter__listaRedes li a:hover{
         transition: 2s;
         transform: scale(1.2);
+        background: linear-gradient(45deg,   #023867, #df1616);
+        animation: gradient 15s ease infinite;
         /* background-color: #90c0eb; */
     }
-
+    @keyframes gradient {
+        0% {
+            background: linear-gradient(30deg,   #023867,#49aaff, #df1616);
+        }
+        50% {
+            background: linear-gradient(-45deg,   #023867,#49aaff ,#df1616);
+        }
+        100% {
+            background: linear-gradient( 50deg,  #023867,#49aaff,#df1616);
+        }
+    }
     
     .ft-legal-list {
     
@@ -242,6 +254,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+       
       }
       .redesFooter{
           padding: 30px 0px;
@@ -262,12 +275,16 @@ body{
         bottom: 10px;
         right: 10px;
         border-radius: 10px;
+
     
       }
       .irArriba:hover{
         background: #49aaff;
         color: rgb(255, 244, 244);
         transition: 1s;
+        border: 3px solid transparent;
+        border-radius: 10px;
+        border-image: linear-gradient(45deg,#023867,rgb(204, 33, 33)) 1;
       }
 
 
@@ -666,6 +683,8 @@ body{
         padding: 20px;
         text-align: justify;
     }
+
+    
 }
 
 /*
