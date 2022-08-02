@@ -71,17 +71,90 @@ footer{
     transition: 1s; 
   }
 
-  .imagenes{
+  .imagenes,.imagenesHistoria{
     width : 100%;
     border: 2px solid #49aaff;
   }
-  .imagenes:hover{
+  .imagenes:hover ,.imagenesHistoria:hover{
     transform: scale(0.98);
     transition: 1s;
   }
+  .tablaAjuste{
+    position: relative;
+    right: 12px;
+  }
 
+  
+  tr{
+    text-align: center;
+    border: #023867;
+
+  }
+
+/* .botonInscripción,.descEvento,.idEvento,.fechaEvento{
+    position: relative;
+    top: 70px;
+} */
+.imagenesTabla{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #023867;
+}
+.imagenesTabla:hover{
+    transform: scale(0.98);
+    transition: 1s;
+}
+.ajustarUbicacion{
+    border: 2px solid #023867; 
+    margin-bottom: 10px;
+
+}
+.ajustarUbicacion:hover{
+    transform: scale(0.98);
+    transition: 1s;
+}
+.imagenUbicacion{
+    width: 100%;
+    height : 500px;
+    
+
+}
+/* .ajustarInputs{
+    width: 400px;
+} */
+.subsection{
+    display: flex;
+    justify-content: center;
+    
+}
+.formularioForm{
+    background-color: #49aaff;
+    padding: 40px;
+    border-color: rgb(245, 54, 33);
+    border-radius: 10px ;
+    box-shadow: 0px 0px 10px #000;
+    margin-bottom: 15px;
+}
+ .botonEnviar{
+    margin-top: 10px;
+    float: right;
+
+} 
   @media screen and (min-width: 768px) {
     .imagenes{
         width : 40%;
       }
+      .formularioForm{
+     
+        margin-bottom: 15px;
+        width: 50%;    
+
+    }
+    .imagenesTabla{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border: 2px solid #023867;
+    }
   }

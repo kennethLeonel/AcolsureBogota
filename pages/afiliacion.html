@@ -4,140 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c9d22b43b9.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="resources/img/logoAcolsure.png"  class="logoAcolsureIcono"/>
+
+    <link rel="icon" type="image/png" href="../resources/img/logoAcolsure-PhotoRoom.png"  class="logoAcolsureIcono"/>
     <title>Afiliacion</title>
-    <link rel="stylesheet" href="../resources/style.css">
+    <script src="https://kit.fontawesome.com/c9d22b43b9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../resources/stilo1.css">
 </head>
 <body>
-    <main class="grid">
-        <header id="header">
-               <a href="../index.html" >
-                   <h1> Acolsure</h1>
-               </a>
-           <img src="../resources/img/logoAcolsure-PhotoRoom.png" alt="" class="logoAcolsure">
-       </header>
-       <nav>
-           <input type="checkbox" id="check">
-           <label for="check" class="checkbtn">
-               <i class="fas fa-bars"></i>
-           </label>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" >
+            <span class="text-light">Acolsure</span>
+            <img src="../resources/img/logoAcolsure-PhotoRoom.png" alt="logo"  class="img-fluid logoAcolsure">
+          </a>
+          <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon  "></span> <!-- icono de hamburguesa -->
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0 l1" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu text-right">
+              <li class="nav-item">
+                <a class="nav-link  "  href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="historia.html" >Historia</a>
+              </li>
+              <li class="nav-item dropdown dropdown-menu-end">
+                <a class="nav-link dropdown-toggle" href="beneficios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Beneficios
+                </a>
+                <ul class="dropdown-menu sublista dropdown-menu-end">
+                  <li><a class="dropdown-item" href="beneficios.html#ofrecemos">Que ofrecemos</a></li>
+                  <li><a class="dropdown-item" href="beneficios.html#locate">Ubicación</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="beneficios.html#pasos">Nuestros beneficios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="afiliacion.html">Afiliarse</a>
+              </li>
+            </ul>
 
-           <ul class="menu">
-               <li ><a href="../index.html" class="active">Inicio</a> </li> 
-               <li><a href="../pages/historia.html">Historia</a></li>
-               <li><a href="../pages/eventos.html">Eventos</a></li>
-               <li><a href="../pages/beneficios.html">Beneficios</a>
-                   <ul>
-                       <li><a href="../pages/beneficios.html#locate">Ubicación</a></li>
-                       <li><a href="../pages/beneficios.html#ofrecemos">Que ofrecemos</a></li>
-                       <li><a href="../pages/beneficios.html#pasos">Beneficios</a></li>
-                   </ul>                    
-               </li>
-               <li><a href="../pages/afiliacion.html">Afiliarse</a></li>
-           </ul>
-       </nav>
-       <article>
+          </div>
+        </div>
+    </nav>
+</header>
+       <article class="container">
                    <!-- Icono Flotante ir arriba -->
             <a href="#header">
                 <i class="irArriba fa-solid fa-arrow-up"></i>
             </a>
-            <h1 class="titulo">Contáctanos Acolsure Bogotá</h1>
+            <h1 class="titulo text-center">Contáctanos Acolsure Bogotá</h1>
             
-    <h3 class="subtitulo">Formulario contacto</h3>
+   
     <section class="subsection">
         <form action="guardar" method="post" class="formularioForm">
             <fieldset>
-             <legend> Información afiliación </legend>
-      
-             <br>
-             <label for="nombre">Nombre: </label>
+             <legend> Formulario contacto </legend>
+
+             <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control ajustarInputs">
+             </div>
+            
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control ajustarInputs">
+            </div>
+            <div>
+                <label for="grado">Grado: </label>
+                <select class="form-select form-select-sm mb-3 ajustarInputs" aria-label=".form-select-lg example" name="grado" id="grado">
+                    <option selected>Seleccione Grado</option>
+                                     
+                    <option value="SM">Sargento Mayor</option>
+                    <option value="VP">Sargento Viciprimero</option>
+                    <option value="S">Sargento</option>
+                    <option value="C">Cabo</option>
+                  </select>
+            </div>
+             
+            <div class="mb-3">
+                Sexo:
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Hombre
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Mujer   
+                    </label>
+                </div>
+            </div>
+
+            
+             <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email: </label>
+                <input type="email" class="form-control ajustarInputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="correo" >
+                <div id="emailHelp" class="form-text">No se compartirá tu correo con nadie más.</div>
+              </div>
+          
+             <div class="mb-3">
+                <label for="celular" class="form-label">Celular: </label>
+                <input type="number" name="celular" id="celular" placeholder="celular" class="form-control ajustarInputs">
+             </div>
+         
              <div>
-                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <label for="mensaje">Mensaje: </label>
+                <div class="form-floating">
+                   <textarea class="form-control ajustarInputs" placeholder="Deja tu mensaje" id="floatingTextarea"></textarea>
+                   <label for="floatingTextarea">Deja tu mensaje</label>
+                 </div>
              </div>
              <br>
-             <label for="apellido">Apellido: </label>
              <div>
-                 <input type="apellido" name="apellido" id="apellido" placeholder="Apellido">
-             </div>
-             <br>
-             <label for="grado">Grado: </label>
-             <div>
-                 <select name="grado" id="grado">
-                     <option value="-"></option>
-                     <option value="SM">Sargento Mayor</option>
-                     <option value="VP">Sargento Viciprimero</option>
-                     <option value="S">Sargento</option>
-                     <option value="C">Cabo</option>
-                 </select>
-             </div>
-             <br>
-             <div>Sexo :
-                 <input type="radio" name="sexo" value="H">Hombre
-                 <input type="radio" name="sexo" value="M">Mujer
-             </div>
-             <br>
-             <label for="email">Email: </label>
-             <div>
-                 <input type="email" name="email" id="email" placeholder="Email">
-             </div>
-             <br>
-             <label for="celular">Celular: </label>
-             <div>
-                 <input type="number" name="celular" id="celular" placeholder="celular">
-             </div>
-             <br>
-             <label for="mensaje">Mensaje: </label>
-             <div>
-                 <textarea name="mensaje" id="mensaje" placeholder="mensaje"> </textarea>
-             </div>
-             <br>
-             <div>
-                 <input type="submit" value="Enviar">    
+                <input class="btn btn-primary botonEnviar" type="submit" value="Enviar">  
              </div>
          </fieldset> 
          </form>
     </section>
 
        </article>
-       <footer>
-           <p>Acolsure Bogotá </p>
-           <section class="mainFooter">
+       <!-- pie de pagina -->
+       <footer class="text-center text-white" >
+       
+           <div class="container pt-4">
+               <h4 class="text-light">Acolsure Bogotá </h4>
+               <section class="mainFooter">
+                    <img src="../resources/img/logoAcolsure-PhotoRoom.png" alt="Logo Acolsure" class="logoEmpresa">
+                </section>
           
-                <img src="../resources/img/logoAcolsure-PhotoRoom.png" alt="Logo Acolsure" class="logoEmpresa">
-            </section>
-            <p class="redesTitle">Redes sociales</p>
-            <section class="redesFooter">
+           </div>
+           <!-- Grid container -->
+           <div class="container pt-4">
+             <!-- Section: Social media -->
+             <h5>
+               Nuestras Redes Sociales
+             </h5>
+             <section class="mb-4 redes">
+               <!-- Facebook -->
+               <a
+                 class="btn btn-link btn-floating btn-lg text-dark m-1 "
+                 href="https://www.facebook.com/profile.php?id=100009639975133"
+                 role="button"
+                 data-mdb-ripple-color="dark"
+                 ><i class="fab fa-facebook-f fa-2x"></i
+               ></a>Facebook
+       
+         
+               <!-- Correo -->
+               <a
+                 class="btn btn-link btn-floating btn-lg text-dark m-1"
+                 href="mailto:acolsurebta@yahoo.com?subject=Conocer%20Acolsure&body=Quiero%20conocer%20los%20beneficios%20que%20me%20ofrece%20la%20asociación%20Acolsure%20Bogotá"
+                 role="button"
+                 data-mdb-ripple-color="dark"
+                 > <i class="fa-solid fa-envelope fa-2x"></i>
+                 
+               </a>Correo
+       
+         
+               <!-- Linkedin -->
+               <a
+                 class="btn btn-link btn-floating btn-lg text-dark m-1"
+                 href="https://www.linkedin.com/in/kenneth-david-leonel-triana-4920b5162/"
+                 role="button"
+                 data-mdb-ripple-color="dark"
+                 ><i class="fab fa-linkedin fa-2x"></i
+               ></a>Linkedin
+               <!-- Github -->
+               <a
+                 class="btn btn-link btn-floating btn-lg text-dark m-1"
+                 href="https://github.com/kennethLeonel"
+                 role="button"
+                 data-mdb-ripple-color="dark"
+                 ><i class="fab fa-github fa-2x"></i
+               ></a>Github
+                   <!--whatsapp -->
+                   <a
+                   class="btn btn-link btn-floating btn-lg text-dark m-1"
+                   href="https://api.whatsapp.com/send?phone=+57 3208346574&text=Hola%20quiero%20saber%20mas%20sobre%20Acolsure%20Bogotá%20link%20https://www.youtube.com/watch?v=9J6IVbkY0Bs"
+                   role="button"
+                   data-mdb-ripple-color="dark"
+                   ><i class="fa-brands fa-whatsapp fa-2x"></i>
+               </a>   whatsapp
                
-                    <ul class="redesFooter__listaRedes">
-                        <li>
-                            <a href="https://api.whatsapp.com/send?phone=+57 3208346574&text=Hola%20quiero%20saber%20mas%20sobre%20Acolsure%20Bogotá%20link%20https://www.youtube.com/watch?v=9J6IVbkY0Bs"> 
-                                <img src="../resources/img/logoWa.svg" alt="icono whatsapp" class="a__iconosRedes">
-                            </a>whatsapp
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100009639975133"> 
-                                <img src="../resources/img/logoFa.svg" alt="icono facebook" class="a__iconosRedes">
-                            </a>Facebook
-                            
-                        </li>
-                        <li>
-                            <a href="mailto:acolsurebta@yahoo.com?subject=Conocer%20Acolsure&body=Quiero%20conocer%20los%20beneficios%20que%20me%20ofrece%20la%20asociación%20Acolsure%20Bogotá">
-                                <img src="../resources/img/logoEm.svg" alt="icono email" class="a__iconosRedes">
-                            </a>Email
-                        </li>
-                    </ul>
-            </section>
-            <section class="ft-legal">
-                <ul class="ft-legal-list">
-                  <li><a href="#">Terms &amp; Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li>&copy; 2022 Copyright Acolsure Bogotá.</li>
-                  <li> <a href="https://www.linkedin.com/in/kenneth-david-leonel-triana-4920b5162/
-                    ">Author : Kenneth Leonel </a></li>
-                </ul>
-              </section>
-       </footer>
-   </main>
+             </section>
+             <!-- Section: Social media -->
+           </div>
+           <!-- Grid container -->
+         
+           <!-- Copyright -->
+           <div class="text-center text-light p-3 derechosFooter"  >
+             © 2022 Copyright:
+             <a class="text-light" href="https://www.linkedin.com/in/kenneth-david-leonel-triana-4920b5162/">Kenneth Leonel</a>
+           </div>
+           <!-- Copyright -->
+         </footer>
+ 
 </body>
 </html>
