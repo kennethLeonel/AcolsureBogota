@@ -1,0 +1,87 @@
+body{
+    background-color: #E0E0E0;
+}
+.logoAcolsure{
+    width: 100px;
+    height: auto;
+}
+.menu li a{
+    color: antiquewhite;
+}
+.menu li a:hover{
+    color: rgb(244, 82, 82);
+}
+nav{
+    background-color: #023867;
+}
+.sublista li a{
+    color: #49aaff
+}
+.sublista li a:hover{
+    color: #de2f2f;
+}
+.sublista{
+    background-color: #023867;
+}
+.hamburguesa{
+    background-color: #023867;  
+}
+.hamburguesa:hover{
+    background-color:   #fff;
+}
+
+footer{
+    background-color: #023867;
+    
+}
+.logoEmpresa{
+    width: 100px;
+    height: auto ;  
+ 
+}
+.redes a i{
+    color: #fff;
+}
+.redes a i:hover{
+    color: #49aaff;
+    transform: scale(0.9);
+    transition: 1s;
+}
+.derechosFooter a{
+    text-decoration: none;
+}
+
+.irArriba{
+    display: inline-block;
+    padding: 20px;
+    background:rgb(204, 33, 33);
+    font-size: 20px;
+    color : white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+
+
+  }
+  .irArriba:hover{
+    background: #49aaff;
+    color: rgb(255, 244, 244);
+    transition: 1s; 
+  }
+
+  .imagenes{
+    width : 100%;
+    border: 2px solid #49aaff;
+  }
+  .imagenes:hover{
+    transform: scale(0.98);
+    transition: 1s;
+  }
+
+  @media screen and (min-width: 768px) {
+    .imagenes{
+        width : 40%;
+      }
+  }

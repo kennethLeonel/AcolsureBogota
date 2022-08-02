@@ -1,4 +1,4 @@
- *{
+ /* *{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -17,7 +17,7 @@ body{
 }
 
 /* Cel style */
-
+/*  
     .grid{
         display: grid;
         grid-template-areas: "header nav nav nav" 
@@ -72,6 +72,7 @@ body{
         transition: 1s;
         transform: scale(1.05);
     } */
+    /*  
     header a{
         color: antiquewhite;
     }
@@ -130,6 +131,7 @@ body{
         text-decoration: none;
         font-size: 20px;
         /* text-transform: uppercase; */
+        /* 
     }
     .menu li a:hover, .menu li a.active{
         color: rgb(216, 18, 18);
@@ -167,7 +169,7 @@ body{
 
     /* Footer */
 
-    
+    /*  
     footer{
    
         background-color: #023867;
@@ -211,7 +213,7 @@ body{
         background: linear-gradient(45deg,   #023867, #df1616);
         animation: gradient 15s ease infinite;
         /* background-color: #90c0eb; */
-    }
+        /*     }
     @keyframes gradient {
         0% {
             background: linear-gradient(30deg,   #023867,#49aaff, #df1616);
@@ -290,6 +292,7 @@ body{
 
 
       /* index styles */
+      /* 
       .titulo{
         text-align: center;
         margin-top: 5px;
@@ -300,8 +303,7 @@ body{
      
     }
     /* Estilo de las imagenes */
-    
-    .imagen{
+    /*      .imagen{
         width: 100%     ;
         height: auto;
         float: left;
@@ -343,6 +345,7 @@ body{
 
     }
     /* Estilo historia */
+   /* 
     .contentComoEmpezo__img{
         width: 100%;
         height: auto;
@@ -370,6 +373,7 @@ body{
     }
 
     /* estilos eventos */
+    /* 
     .agruparSections{
         padding: 4px;
         
@@ -404,6 +408,7 @@ body{
 
     }
     /* estilo afiliacion */
+    /*  
     .subtitulo{
         margin-top: 10px;
         text-align: center;
@@ -425,6 +430,7 @@ body{
         
     }
     /* estilo beneficios */
+    /* 
     .ajustarUbicacion{
         margin-top: 5px;
         margin-bottom: 10px;
@@ -442,6 +448,7 @@ body{
 
 
 /*  Media query Web*/
+/* 
 @media screen and (min-width: 768px) {
     .grid{
         display: grid;
@@ -605,6 +612,7 @@ body{
       }
 
     /* Index styles */
+    /* 
       .imagen{
         width: 400px;
         height: auto;
@@ -669,7 +677,7 @@ body{
         text-align: justify;
     }    */
     /* estilos eventos */
-
+/* 
     .formularioForm{
         margin-top: 10px;
         width: 100%;
@@ -1015,4 +1023,4 @@ footer{
 
 
     
-} 
+}  */
