@@ -1,0 +1,29 @@
+$fondoPrincipal : #023867;
+$tonoTexto: rgb(204, 33, 33);
+$tonoTexto2: #49aaff;
+
+/* FOOTER */
+footer{
+    background-color: $fondoPrincipal;
+     .mainFooter{
+        .logoEmpresa{
+            width: 100px;
+            height: auto ;   
+        }
+    }
+    .redes a i{
+        color: #fff;
+        transition: 2s all;
+        &:hover{
+            color: $tonoTexto2;
+            transform: scale(0.9);
+            
+        }
+    }
+    .derechosFooter a{
+        text-decoration: none;
+    }
+}
+
+
+

@@ -1,0 +1,173 @@
+body {
+  background-color: #E0E0E0;
+  font-family: 'IBM Plex Sans', sans-serif; }
+
+/* Navegacion*/
+nav {
+  background-color: #023867; }
+  nav .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    nav .navbar-brand .logoAcolsure {
+      width: 100px;
+      height: auto; }
+  nav .contenidoPrincipal .menu li a {
+    color: antiquewhite; }
+    nav .contenidoPrincipal .menu li a:hover {
+      color: #cc2121; }
+  nav .contenidoPrincipal .menu .sublista {
+    background-color: #023867; }
+    nav .contenidoPrincipal .menu .sublista li a {
+      color: #49aaff; }
+      nav .contenidoPrincipal .menu .sublista li a:hover {
+        color: #cc2121; }
+  nav .hamburguesa {
+    background-color: #023867; }
+    nav .hamburguesa:hover {
+      background-color: #cc2121; }
+
+/* FOOTER */
+footer {
+  background-color: #023867; }
+  footer .mainFooter .logoEmpresa {
+    width: 100px;
+    height: auto; }
+  footer .redes a i {
+    color: #fff;
+    transition: 2s all; }
+    footer .redes a i:hover {
+      color: #49aaff;
+      transform: scale(0.9); }
+  footer .derechosFooter a {
+    text-decoration: none; }
+
+/* Demas Sesiones*/
+.probar {
+  border: 2px solid black; }
+
+.irArriba {
+  display: inline-block;
+  padding: 20px;
+  background: #cc2121;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+  transition: 2s all; }
+  .irArriba:hover {
+    background: #49aaff;
+    color: #fff4f4; }
+
+.imagenes, .imagenesHistoria {
+  width: 100%;
+  border: 2px solid #49aaff; }
+
+.imgQuines {
+  border: none;
+  padding-right: 10px; }
+
+.imagenes:hover, .imagenesHistoria:hover {
+  transform: scale(0.98);
+  transition: 1s; }
+
+.tablaAjuste {
+  position: relative;
+  right: 12px; }
+
+tr {
+  text-align: center;
+  border: #023867; }
+
+.imagenesTabla {
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid #023867;
+  transition: 1s all; }
+  .imagenesTabla:hover {
+    transform: scale(0.98); }
+
+.ajustarUbicacion {
+  border: 2px solid #023867;
+  margin-bottom: 10px;
+  transition: 1s all; }
+  .ajustarUbicacion:hover {
+    transform: scale(0.98); }
+  .ajustarUbicacion .imagenUbicacion {
+    width: 100%;
+    height: 500px; }
+
+.subsection {
+  display: flex;
+  justify-content: center; }
+
+.formularioForm {
+  background-color: #49aaff;
+  padding: 40px;
+  border-color: #cc2121;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  margin-bottom: 15px; }
+
+.botonEnviar {
+  margin-top: 10px;
+  float: right; }
+
+.probar {
+  margin-top: 10px;
+  background-image: url("../img/prueba.gif");
+  background-size: cover;
+  width: 100%;
+  height: 150px; }
+
+.seccionEventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px; }
+
+.seccionEventosAjustes {
+  width: 100%;
+  border: 2px solid #023867; }
+
+.seccionEventosAjustes a img {
+  float: left;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 1s all; }
+  .seccionEventosAjustes a img:hover {
+    transform: scale(1.03); }
+
+.afiliacion {
+  background-image: url("../img/fondo.jpeg");
+  background-size: cover; }
+
+@media screen and (min-width: 768px) {
+  .imagenes {
+    width: 40%; }
+  .formularioForm {
+    margin-bottom: 15px;
+    width: 50%; }
+  .imagenesTabla {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #023867; }
+  .probar {
+    margin-top: 10px;
+    background-image: url("../img/prueba.gif");
+    background-size: cover;
+    width: 100%;
+    height: 500px; }
+  .seccionEventosAjustes a img {
+    float: left;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    transition: 1s all; } }

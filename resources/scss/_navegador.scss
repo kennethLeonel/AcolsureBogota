@@ -1,0 +1,44 @@
+/* Navegacion*/
+$fondoPrincipal : #023867;
+$tonoTexto: rgb(204, 33, 33);
+$tonoTexto2: #49aaff;
+nav{
+    background-color: $fondoPrincipal;
+    .navbar-brand{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .logoAcolsure{
+            width: 100px;
+            height: auto;
+        }
+    }
+    .contenidoPrincipal{
+        .menu{
+            li a{
+                color: antiquewhite;
+                &:hover{    
+                    color: $tonoTexto;
+                }   
+            }
+            .sublista{
+                background-color:$fondoPrincipal;
+                li a{
+                    color: $tonoTexto2;
+                    &:hover{
+                        color: $tonoTexto;
+                    }
+                }
+            
+            }
+        }
+        
+    }
+    .hamburguesa{
+        background-color: $fondoPrincipal;  
+        &:hover{
+            background-color: $tonoTexto;
+        }
+    }
+}

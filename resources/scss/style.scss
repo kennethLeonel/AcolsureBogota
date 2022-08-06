@@ -3,68 +3,23 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-    .logoAcolsure{
-        width: 100px;
-        height: auto;
-    }
-.menu li a{
-    color: antiquewhite;
-}
-.menu li a:hover{
-    color: rgb(244, 82, 82);
-}
-nav{
-    background-color: #023867;
-}
-.navbar-brand{
+@import "navegador";
+$fondoPrincipal : #023867;
+$tonoTexto: rgb(204, 33, 33);
+$tonoTexto2: #49aaff;
+$border: 2px solid;
 
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@import "footer";
 
-}
-.sublista li a{
-    color: #49aaff
-}
-.sublista li a:hover{
-    color: #de2f2f;
-}
-.sublista{
-    background-color: #023867;
-}
-.hamburguesa{
-    background-color: #023867;  
-}
-.hamburguesa:hover{
-    background-color:   #fff;
-}
 
-footer{
-    background-color: #023867;
-    
+/* Demas Sesiones*/
+.probar{
+    border: $border black;
 }
-.logoEmpresa{
-    width: 100px;
-    height: auto ;  
- 
-}
-.redes a i{
-    color: #fff;
-}
-.redes a i:hover{
-    color: #49aaff;
-    transform: scale(0.9);
-    transition: 1s;
-}
-.derechosFooter a{
-    text-decoration: none;
-}
-
 .irArriba{
     display: inline-block;
     padding: 20px;
-    background:rgb(204, 33, 33);
+    background:$tonoTexto;
     font-size: 20px;
     color : white;
     cursor: pointer;
@@ -72,18 +27,19 @@ footer{
     bottom: 10px;
     right: 10px;
     border-radius: 10px;
-
+    transition: 2s all;
+    &:hover{
+        background: $tonoTexto2;
+        color: rgb(255, 244, 244);
+       
+    }
 
   }
-  .irArriba:hover{
-    background: #49aaff;
-    color: rgb(255, 244, 244);
-    transition: 1s; 
-  }
+ 
 
   .imagenes,.imagenesHistoria{
     width : 100%;
-    border: 2px solid #49aaff;
+    border: $border $tonoTexto2;
   }
   .imgQuines{
     border:none;
@@ -103,51 +59,45 @@ footer{
   
   tr{
     text-align: center;
-    border: #023867;
+    border: $fondoPrincipal;
 
   }
 
-/* .botonInscripción,.descEvento,.idEvento,.fechaEvento{
-    position: relative;
-    top: 70px;
-} */
+
 .imagenesTabla{
     width: 100px;
     height: auto;
     border-radius: 20px;
-    border: 2px solid #023867;
+    border: $border $fondoPrincipal;
+    transition: 1s all;
+    &:hover{
+        transform: scale(0.98);   
+    }
 }
-.imagenesTabla:hover{
-    transform: scale(0.98);
-    transition: 1s;
-}
+
 .ajustarUbicacion{
-    border: 2px solid #023867; 
+    border: $border $fondoPrincipal; 
     margin-bottom: 10px;
+    transition: 1s all;
+    &:hover{
+        transform: scale(0.98);   
+    }
+    .imagenUbicacion{
+        width: 100%;
+        height : 500px;
+    }
+}
 
-}
-.ajustarUbicacion:hover{
-    transform: scale(0.98);
-    transition: 1s;
-}
-.imagenUbicacion{
-    width: 100%;
-    height : 500px;
-    
 
-}
-/* .ajustarInputs{
-    width: 400px;
-} */
 .subsection{
     display: flex;
     justify-content: center;
     
 }
 .formularioForm{
-    background-color: #49aaff;
+    background-color: $tonoTexto2;
     padding: 40px;
-    border-color: rgb(245, 54, 33);
+    border-color: $tonoTexto;
     border-radius: 10px ;
     box-shadow: 0px 0px 10px #000;
     margin-bottom: 15px;
@@ -160,13 +110,12 @@ footer{
 
 .probar {
     margin-top: 10px;
-    background-image: url("img/prueba.gif");
+    background-image: url("../img/prueba.gif");
     background-size: cover;
     width: 100%;        
     height: 150px;
 
 }
-
 
 .seccionEventos{
     display: flex;
@@ -176,7 +125,7 @@ footer{
   }
   .seccionEventosAjustes{
    width: 100%;
-   border: 2px solid #023867;
+   border: $border $fondoPrincipal;
 
   } 
   .seccionEventosAjustes a img{
@@ -185,15 +134,15 @@ footer{
     height: 300px;
     object-fit: cover;
     transition: 1s all;
+    &:hover{
+        transform: scale(1.03);   
+    }
    
   }
-  .seccionEventosAjustes a img:hover{
-    transform: scale(1.02);
-   
-  }
+  
 
   .afiliacion{
-    background-image: url("img/fondo.jpeg") ;
+    background-image: url("../img/fondo.jpeg") ;
     background-size: cover;
   } 
 
@@ -211,11 +160,11 @@ footer{
         width: 100%;
         height: auto;
         border-radius: 20px;
-        border: 2px solid #023867;
+        border: $border $fondoPrincipal ;
     }
     .probar {
         margin-top: 10px;
-        background-image: url("img/prueba.gif");
+        background-image: url("../img/prueba.gif");
         background-size: cover;
         width: 100%;        
         height: 500px;
