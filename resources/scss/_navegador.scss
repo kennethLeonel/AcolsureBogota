@@ -18,6 +18,7 @@ nav{
         .menu{
             li a{
                 color: antiquewhite;
+                transition: 1s all;
                 &:hover{    
                     color: $tonoTexto;
                 }   
