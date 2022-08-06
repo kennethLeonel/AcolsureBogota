@@ -1,10 +1,12 @@
 body{
     background-color: #E0E0E0;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
-.logoAcolsure{
-    width: 100px;
-    height: auto;
-}
+
+    .logoAcolsure{
+        width: 100px;
+        height: auto;
+    }
 .menu li a{
     color: antiquewhite;
 }
@@ -13,6 +15,14 @@ body{
 }
 nav{
     background-color: #023867;
+}
+.navbar-brand{
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 .sublista li a{
     color: #49aaff
@@ -74,6 +84,12 @@ footer{
   .imagenes,.imagenesHistoria{
     width : 100%;
     border: 2px solid #49aaff;
+  }
+  .imgQuines{
+    border:none;
+    padding-right: 10px;
+
+   
   }
   .imagenes:hover ,.imagenesHistoria:hover{
     transform: scale(0.98);
@@ -141,6 +157,42 @@ footer{
     float: right;
 
 } 
+
+.probar {
+    margin-top: 10px;
+    background-image: url("img/prueba.gif");
+    background-size: cover;
+    width: 100%;        
+    height: 150px;
+
+}
+
+
+.seccionEventos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .seccionEventosAjustes{
+   width: 100%;
+   border: 2px solid #023867;
+
+  } 
+  .seccionEventosAjustes a img{
+    transition: 1s all;
+   
+  }
+  .seccionEventosAjustes a img:hover{
+    transform: scale(1.02);
+   
+  }
+
+  .afiliacion{
+    background-image: url("img/fondo.jpeg") ;
+    background-size: cover;
+  } 
+
   @media screen and (min-width: 768px) {
     .imagenes{
         width : 40%;
@@ -157,4 +209,13 @@ footer{
         border-radius: 20px;
         border: 2px solid #023867;
     }
+    .probar {
+        margin-top: 10px;
+        background-image: url("img/prueba.gif");
+        background-size: cover;
+        width: 100%;        
+        height: 500px;
+    
+    }
   }
+
