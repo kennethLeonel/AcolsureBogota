@@ -180,6 +180,9 @@ footer{
 
   } 
   .seccionEventosAjustes a img{
+    float: left;
+    height: 300px;
+    object-fit: cover;
     transition: 1s all;
    
   }
@@ -217,5 +220,13 @@ footer{
         height: 500px;
     
     }
+    .seccionEventosAjustes a img{
+        float: left;
+        width:  100%;
+        height: 700px;
+        object-fit: cover;
+        transition: 1s all;
+       
+      }
   }
 
