@@ -2,12 +2,25 @@
 $fondoPrincipal : #023867;
 $tonoTexto: rgb(204, 33, 33);
 $tonoTexto2: #49aaff;
+
+$tonosNav :(
+    menu-li-a: antiquewhite,
+    hover: $tonoTexto,
+    sinHover: $tonoTexto2,
+    fondo: $fondoPrincipal
+
+);
+
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
 nav{
     background-color: $fondoPrincipal;
     .navbar-brand{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @extend .display;
         align-items: center;
         .logoAcolsure{
             width: 100px;
@@ -17,18 +30,18 @@ nav{
     .contenidoPrincipal{
         .menu{
             li a{
-                color: antiquewhite;
+                color: map-get($tonosNav  , menu-li-a );
                 transition: 1s all;
                 &:hover{    
-                    color: $tonoTexto;
+                    color: map-get($tonosNav  , hover );
                 }   
             }
             .sublista{
                 background-color:$fondoPrincipal;
                 li a{
-                    color: $tonoTexto2;
+                    color: map-get($tonosNav  , sinHover );
                     &:hover{
-                        color: $tonoTexto;
+                        color: map-get($tonosNav  , hover );
                     }
                 }
             
@@ -37,9 +50,9 @@ nav{
         
     }
     .hamburguesa{
-        background-color: $fondoPrincipal;  
+        background-color: map-get($tonosNav  , fondo );  
         &:hover{
-            background-color: $tonoTexto;
+            background-color: map-get($tonosNav  , hover );
         }
     }
 }

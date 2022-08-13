@@ -3,6 +3,11 @@ $tonoTexto: rgb(204, 33, 33);
 $tonoTexto2: #49aaff;
 
 /* FOOTER */
+@mixin aumento($tam){
+    transform: scale($tam);
+    color: $tonoTexto2;
+}
+
 footer{
     background-color: $fondoPrincipal;
      .mainFooter{
@@ -15,8 +20,8 @@ footer{
         color: #fff;
         transition: 2s all;
         &:hover{
-            color: $tonoTexto2;
-            transform: scale(0.9);
+           
+            @include aumento(0.9);
             
         }
     }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://kennethleonel.github.io/AcolsureBogota/</loc>
+        <lastmod>2022-08-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://kennethleonel.github.io/AcolsureBogota/pages/historia.html</loc>
+        <lastmod>2022-08-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kennethleonel.github.io/AcolsureBogota/pages/beneficios.html   </loc>
+        <lastmod>2022-08-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://kennethleonel.github.io/AcolsureBogota/pages/eventos.html</loc>
+        <lastmod>2022-08-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>2.0</priority>
+    </url>
+    <url>
+        <loc>https://kennethleonel.github.io/AcolsureBogota/pages/afiliacion.html</loc>
+        <lastmod>2022-08-13</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.2</priority>
+    </url>
+
+
+</urlset>

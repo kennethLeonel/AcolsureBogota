@@ -3,18 +3,22 @@ body {
   font-family: 'IBM Plex Sans', sans-serif; }
 
 /* Navegacion*/
+.display, nav .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline; }
+
 nav {
   background-color: #023867; }
   nav .navbar-brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center; }
     nav .navbar-brand .logoAcolsure {
       width: 100px;
       height: auto; }
   nav .contenidoPrincipal .menu li a {
-    color: antiquewhite; }
+    color: antiquewhite;
+    transition: 1s all; }
     nav .contenidoPrincipal .menu li a:hover {
       color: #cc2121; }
   nav .contenidoPrincipal .menu .sublista {
@@ -38,8 +42,8 @@ footer {
     color: #fff;
     transition: 2s all; }
     footer .redes a i:hover {
-      color: #49aaff;
-      transform: scale(0.9); }
+      transform: scale(0.9);
+      color: #49aaff; }
   footer .derechosFooter a {
     text-decoration: none; }
 
@@ -63,17 +67,20 @@ footer {
     background: #49aaff;
     color: #fff4f4; }
 
-.imagenes, .imagenesHistoria {
+.imagenPlantilla, .imagenes, .imagenesHistoria {
   width: 100%;
-  border: 2px solid #49aaff; }
+  border: 2px solid #49aaff;
+  transition: 1s all; }
+
+.imagenes:hover {
+  transform: scale(0.98); }
+
+.imagenesHistoria:hover {
+  transform: scale(0.98); }
 
 .imgQuines {
   border: none;
   padding-right: 10px; }
-
-.imagenes:hover, .imagenesHistoria:hover {
-  transform: scale(0.98);
-  transition: 1s; }
 
 .tablaAjuste {
   position: relative;

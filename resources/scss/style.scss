@@ -36,21 +36,39 @@ $border: 2px solid;
 
   }
  
-
-  .imagenes,.imagenesHistoria{
+  .imagenPlantilla{
     width : 100%;
     border: $border $tonoTexto2;
+    transition: 1s all;
+  }
+  @mixin escalarTam ($tam){
+    transform: scale($tam);
+    
+  }
+  .imagenes{
+    @extend .imagenPlantilla;
+  }
+  .imagenes:hover{
+      @include escalarTam (0.98); 
+  }
+  // .imagenes,.imagenesHistoria{
+  //   width : 100%;
+  //   border: $border $tonoTexto2;
+  // }
+  .imagenesHistoria{
+    @extend .imagenPlantilla;
+  }
+  .imagenesHistoria:hover{
+    @include escalarTam (0.98); 
   }
   .imgQuines{
     border:none;
     padding-right: 10px;
-
-   
   }
-  .imagenes:hover ,.imagenesHistoria:hover{
-    transform: scale(0.98);
-    transition: 1s;
-  }
+  // .imagenes:hover ,.imagenesHistoria:hover{
+  //   transform: scale(0.98);
+  //   transition: 1s;
+  // }
   .tablaAjuste{
     position: relative;
     right: 12px;
@@ -71,7 +89,7 @@ $border: 2px solid;
     border: $border $fondoPrincipal;
     transition: 1s all;
     &:hover{
-        transform: scale(0.98);   
+      @include escalarTam (0.98);   
     }
 }
 
@@ -80,7 +98,7 @@ $border: 2px solid;
     margin-bottom: 10px;
     transition: 1s all;
     &:hover{
-        transform: scale(0.98);   
+      @include escalarTam (0.98); 
     }
     .imagenUbicacion{
         width: 100%;
@@ -135,7 +153,7 @@ $border: 2px solid;
     object-fit: cover;
     transition: 1s all;
     &:hover{
-        transform: scale(1.03);   
+      @include escalarTam (1.03); 
     }
    
   }
