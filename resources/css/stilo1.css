@@ -14,7 +14,7 @@ nav {
   nav .navbar-brand {
     align-items: center; }
     nav .navbar-brand .logoAcolsure {
-      width: 100px;
+      width: 70px;
       height: auto; }
   nav .contenidoPrincipal .menu li a {
     color: antiquewhite;
@@ -48,39 +48,54 @@ footer {
     text-decoration: none; }
 
 /* Demas Sesiones*/
-.probar {
-  border: 2px solid black; }
-
 .irArriba {
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   background: #cc2121;
   font-size: 20px;
   color: white;
   cursor: pointer;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: 8px;
   border-radius: 10px;
   transition: 2s all; }
   .irArriba:hover {
     background: #49aaff;
     color: #fff4f4; }
 
+.contenedorTodascards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box; }
+  .contenedorTodascards .contenedorcard {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
+
 .imagenPlantilla, .imagenes, .imagenesHistoria {
   width: 100%;
-  border: 2px solid #49aaff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   transition: 1s all; }
 
 .imagenes:hover {
   transform: scale(0.98); }
+
+.imagenesHistoria {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-sizing: border-box; }
 
 .imagenesHistoria:hover {
   transform: scale(0.98); }
 
 .imgQuines {
   border: none;
-  padding-right: 10px; }
+  box-sizing: border-box;
+  margin-right: 15px; }
 
 .tablaAjuste {
   position: relative;
@@ -100,7 +115,7 @@ tr {
     transform: scale(0.98); }
 
 .ajustarUbicacion {
-  border: 2px solid #023867;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   margin-bottom: 10px;
   transition: 1s all; }
   .ajustarUbicacion:hover {
@@ -130,29 +145,34 @@ tr {
   background-image: url("../img/prueba.gif");
   background-size: cover;
   width: 100%;
-  height: 150px; }
+  height: 150px;
+  box-shadow: #000 0px 0px 10px;
+  text-shadow: #767171 0px 0px 10px;
+  border-radius: 20px; }
 
 .seccionEventos {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px; }
 
 .seccionEventosAjustes {
-  width: 100%;
-  border: 2px solid #023867; }
+  width: 100%; }
 
 .seccionEventosAjustes a img {
   float: left;
   width: 100%;
   height: 300px;
   object-fit: cover;
-  transition: 1s all; }
+  transition: 1s all;
+  border-radius: 20px; }
   .seccionEventosAjustes a img:hover {
     transform: scale(1.03); }
 
 .afiliacion {
-  background-image: url("../img/fondo.jpeg");
+  background-image: url("../img/fondoFormulario.jpg");
   background-size: cover; }
 
 @media screen and (min-width: 768px) {
@@ -177,4 +197,21 @@ tr {
     width: 100%;
     height: 700px;
     object-fit: cover;
-    transition: 1s all; } }
+    transition: 1s all; }
+  .contenedorTodascards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%; }
+    .contenedorTodascards .contenedorcard {
+      width: 30%;
+      height: 560px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); }
+      .contenedorTodascards .contenedorcard .claseCardImages {
+        width: 100%;
+        height: auto; } }

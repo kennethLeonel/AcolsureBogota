@@ -8,24 +8,22 @@ $fondoPrincipal : #023867;
 $tonoTexto: rgb(204, 33, 33);
 $tonoTexto2: #49aaff;
 $border: 2px solid;
-
+$shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 @import "footer";
 
 
 /* Demas Sesiones*/
-.probar{
-    border: $border black;
-}
+
 .irArriba{
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     background:$tonoTexto;
     font-size: 20px;
     color : white;
     cursor: pointer;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 8px;
     border-radius: 10px;
     transition: 2s all;
     &:hover{
@@ -35,10 +33,30 @@ $border: 2px solid;
     }
 
   }
- 
+
+  // .titulo{
+  //   margin-top: 10px;
+    
+  // }
+
+  .contenedorTodascards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100% ;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    .contenedorcard{
+      margin-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: $shadow;
+    }
+  }
+
   .imagenPlantilla{
     width : 100%;
-    border: $border $tonoTexto2;
+    // border: $border $tonoTexto2;
+    box-shadow: $shadow;
     transition: 1s all;
   }
   @mixin escalarTam ($tam){
@@ -57,13 +75,20 @@ $border: 2px solid;
   // }
   .imagenesHistoria{
     @extend .imagenPlantilla;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
   }
   .imagenesHistoria:hover{
     @include escalarTam (0.98); 
   }
   .imgQuines{
     border:none;
-    padding-right: 10px;
+    box-sizing: border-box;
+    margin-right: 15px;
+    
+   
+
   }
   // .imagenes:hover ,.imagenesHistoria:hover{
   //   transform: scale(0.98);
@@ -94,7 +119,8 @@ $border: 2px solid;
 }
 
 .ajustarUbicacion{
-    border: $border $fondoPrincipal; 
+    // border: $border $fondoPrincipal; 
+    box-shadow: $shadow;
     margin-bottom: 10px;
     transition: 1s all;
     &:hover{
@@ -132,6 +158,10 @@ $border: 2px solid;
     background-size: cover;
     width: 100%;        
     height: 150px;
+    box-shadow: #000 0px 0px 10px;
+    text-shadow: rgb(118, 113, 113) 0px 0px 10px;
+    border-radius: 20px;
+    
 
 }
 
@@ -140,10 +170,16 @@ $border: 2px solid;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    box-shadow:  $shadow;
+    border-radius: 20px;
+   
+
   }
   .seccionEventosAjustes{
    width: 100%;
-   border: $border $fondoPrincipal;
+  //  border: $border $fondoPrincipal;
+ 
+  
 
   } 
   .seccionEventosAjustes a img{
@@ -152,15 +188,17 @@ $border: 2px solid;
     height: 300px;
     object-fit: cover;
     transition: 1s all;
+    border-radius: 20px;
     &:hover{
       @include escalarTam (1.03); 
+      
     }
    
   }
   
 
   .afiliacion{
-    background-image: url("../img/fondo.jpeg") ;
+    background-image: url("../img/fondoFormulario.jpg") ;
     background-size: cover;
   } 
 
@@ -194,6 +232,29 @@ $border: 2px solid;
         height: 700px;
         object-fit: cover;
         transition: 1s all;   
+      }
+
+
+      .contenedorTodascards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        .contenedorcard{
+          width: 30%;
+          height: 560px;
+          box-shadow: $shadow;
+          
+          .claseCardImages{
+            width: 100% ;  
+            height: auto;
+          }
+        }
       }
   }
 
