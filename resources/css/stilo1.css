@@ -175,6 +175,9 @@ tr {
   background-image: url("../img/fondoFormulario.jpg");
   background-size: cover; }
 
+.titulo {
+  margin-top: 10px; }
+
 @media screen and (min-width: 768px) {
   .imagenes {
     width: 40%; }
