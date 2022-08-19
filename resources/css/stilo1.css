@@ -178,6 +178,37 @@ tr {
 .titulo {
   margin-top: 10px; }
 
+.beneficiosCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 20px; }
+  .beneficiosCards .hijoBeneficioCard {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 80%;
+    transition: 2s all; }
+    .beneficiosCards .hijoBeneficioCard:hover {
+      transform: scale(1.03); }
+    .beneficiosCards .hijoBeneficioCard .hijocard p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center; }
+      .beneficiosCards .hijoBeneficioCard .hijocard p i {
+        color: #023867;
+        transition: 3s all; }
+      .beneficiosCards .hijoBeneficioCard .hijocard p i:hover {
+        color: #49aaff;
+        transform: scale(0.88); }
+
 @media screen and (min-width: 768px) {
   .imagenes {
     width: 40%; }

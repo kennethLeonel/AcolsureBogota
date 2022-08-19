@@ -205,6 +205,48 @@ $shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
   .titulo{
     margin-top: 10px;
   }
+
+  .beneficiosCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    gap: 20px;
+      .hijoBeneficioCard{
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        width: 80%;
+        transition: 2s all;
+        &:hover{
+          @include escalarTam (1.03); 
+        }
+        .hijocard p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            i {
+              color: $fondoPrincipal;
+              transition: 3s all;
+            }
+            i:hover{
+              color: $tonoTexto2;
+              transform: scale(0.88);
+            }
+        }
+      }
+     
+  }
+
+
+
   @media screen and (min-width: 768px) {
     .imagenes{
         width : 40%;
