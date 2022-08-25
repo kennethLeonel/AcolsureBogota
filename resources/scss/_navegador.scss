@@ -22,10 +22,16 @@ nav{
     .navbar-brand{
         @extend .display;
         align-items: center;
+        transition: 1s all;
         .logoAcolsure{
             width: 70px;
             height: auto;
+            
         }
+        &:hover{
+            transform: scale(0.98);
+        }
+
     }
     .contenidoPrincipal{
         .menu{

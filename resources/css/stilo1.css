@@ -12,10 +12,13 @@ body {
 nav {
   background-color: #023867; }
   nav .navbar-brand {
-    align-items: center; }
+    align-items: center;
+    transition: 1s all; }
     nav .navbar-brand .logoAcolsure {
       width: 70px;
       height: auto; }
+    nav .navbar-brand:hover {
+      transform: scale(0.98); }
   nav .contenidoPrincipal .menu li a {
     color: antiquewhite;
     transition: 1s all; }
@@ -70,7 +73,8 @@ footer {
   margin-top: 20px;
   width: 100%;
   margin-bottom: 10px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  gap: 20px; }
   .contenedorTodascards .contenedorcard {
     margin-bottom: 10px;
     border-radius: 10px;
@@ -104,6 +108,9 @@ footer {
 tr {
   text-align: center;
   border: #023867; }
+
+.tituloEvento {
+  text-align: center; }
 
 .imagenesTabla {
   width: 100px;
